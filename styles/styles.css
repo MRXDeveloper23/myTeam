@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 932px;
+  margin: 0 auto;
+}
+
+.container__header {
+  margin-top: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 38px;
+  padding: 0 12px;
+  margin-bottom: 60px;
+}
+
+.container__header h1 {
+  font-family: "PT Serif", "serif";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.container__header > p {
+  width: 333px;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container__header span {
+  display: block;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.team {
+  padding: 0 18px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.team__card {
+  display: flex;
+  justify-content: space-between;
+  width: 156px;
+  height: 237px;
+}
+
+img {
+  width: 138px;
+  height: 209px;
+}
+
+.team__card--role {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "PT Serif", "serif";
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+figcaption {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+footer span {
+  font-weight: 700;
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 768px) {
+  .team__card:nth-child(even) {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+/* media query for desktop users */
+@media only screen and (min-width: 1024px) {
+  .container__header {
+    margin-top: 110px;
+    flex-direction: row;
+    gap: 215px;
+    margin-bottom: 96px;
+  }
+  .container__header h1 {
+    width: 278px;
+  }
+  .container__header > p {
+    font-size: 18px;
+    width: 439px;
+  }
+  figcaption {
+    font-size: 18px;
+  }
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .team__card {
+    width: 264px;
+    height: 383px;
+  }
+  .team__card:nth-child(2),
+  .team__card:nth-child(5) {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .team__card--role {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  img {
+    width: 238px;
+    height: 357px;
+  }
+  figcaption {
+    margin-top: 5px;
+  }
+}
