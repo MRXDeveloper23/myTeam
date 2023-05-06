@@ -38,10 +38,8 @@
 
 Here is screenshot of my team page in desktop device:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- I have implemented design for desktop and mobile users.
+- Used technologies here just HTML and CSS concepts like flexbox grid revised.
 
 ### Built With
 
